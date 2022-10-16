@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Square_Wiggle
+  m_Name: char_wiggle_green
   serializedVersion: 6
   m_Legacy: 0
   m_Compressed: 0
@@ -20,11 +20,11 @@ AnimationClip:
   m_PPtrCurves:
   - curve:
     - time: 0
-      value: {fileID: 21300000, guid: 84564ac4a8f19e3448dbdee8daa0ce78, type: 3}
+      value: {fileID: 21300000, guid: 8c8a6b40df1655e499c9063d8b3a089b, type: 3}
     - time: 0.33333334
-      value: {fileID: 21300000, guid: d9779b8cbb1b1674a8b947f8f0a5c94e, type: 3}
+      value: {fileID: 21300000, guid: 0d46d45c2bb65264281b35238920e200, type: 3}
     - time: 0.6666667
-      value: {fileID: 21300000, guid: 84564ac4a8f19e3448dbdee8daa0ce78, type: 3}
+      value: {fileID: 21300000, guid: 8c8a6b40df1655e499c9063d8b3a089b, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
@@ -44,9 +44,9 @@ AnimationClip:
       customType: 23
       isPPtrCurve: 1
     pptrCurveMapping:
-    - {fileID: 21300000, guid: 84564ac4a8f19e3448dbdee8daa0ce78, type: 3}
-    - {fileID: 21300000, guid: d9779b8cbb1b1674a8b947f8f0a5c94e, type: 3}
-    - {fileID: 21300000, guid: 84564ac4a8f19e3448dbdee8daa0ce78, type: 3}
+    - {fileID: 21300000, guid: 8c8a6b40df1655e499c9063d8b3a089b, type: 3}
+    - {fileID: 21300000, guid: 0d46d45c2bb65264281b35238920e200, type: 3}
+    - {fileID: 21300000, guid: 8c8a6b40df1655e499c9063d8b3a089b, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}

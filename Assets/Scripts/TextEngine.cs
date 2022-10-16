@@ -9,14 +9,21 @@ public class TextEngine : MonoBehaviour
 {   
     // grabs the textmeshpro from unity to edit
     public TextMeshProUGUI textBox;
-    public SpriteRenderer boxImage;
+    public Animator boxAnimator;
+    public Animator charAnimator;
 
     // what to actually display every frame
     string textOutput = "";
-    static string currentMessage = "Yo, what's up! How have you been?";
-    int timer = currentMessage.Length;
+    static string currentMessage = "<Press space or click to progress the story>";
+    int timer = currentMessage.Length * 2;
     int listCounter = 0;
 
+    // loads all resources needed to swap animations
+    // RuntimeAnimatorController wiggle_green = Resources.Load("Assets/Resources/Animation Controllers/wiggle_green");
+    // RuntimeAnimatorController wiggle_blue = Resources.Load("Assets/Resources/Animation Controllers/wiggle_blue");
+    // RuntimeAnimatorController wiggle_pink = Resources.Load("Assets/Resources/Animation Controllers/wiggle_pink");
+
+    
     string[,] messageList = new string[3,2] {
         {"Yo, what's up?", "green"},
         {"Im tirede man fojksdjfkls ", "blue"},
@@ -25,7 +32,9 @@ public class TextEngine : MonoBehaviour
 
     // Update is called once per frame
     void Update()
-    {      
+    {   
+        // checks every frame if text buffer update is needed, and then
+        // checks if the user is pressing space
         if (timer > 0) {
             bufferText();
         } else {
@@ -55,7 +64,9 @@ public class TextEngine : MonoBehaviour
         currentMessage = message;
         timer = currentMessage.Length * 2;
     }
-    void slowText(string message, string character) {
+    void slowText(string message, string colour) {
         slowText(message);
+        boxAnimator.Play("wiggle_" + colour);
+        charAnimator.Play("char_wiggle_" + colour);
     }
 }
